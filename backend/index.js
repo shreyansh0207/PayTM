@@ -8,7 +8,9 @@ app.get("/",function(req,res){
 })
 
 app.post("/",function(req,res){
-
+res.json({
+    message : "Hi"
+})
 })
 
 app.listen(3000,function(){
