@@ -4,6 +4,7 @@ const app = express();
 
 
 app.get("/",function(req,res){
+let a  = req.body;
 
 })
 
