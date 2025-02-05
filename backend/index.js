@@ -1,20 +1,13 @@
 const express = require("express");
+const cors = require("cors");
 
+app.use(cors());
+app.use(express.json());
+
+
+const mainRouter = require("./routes.index");
 const app = express();
 
-const [] = useState();
+app.use("/api/vi",mainRouter);
 
-app.get("/",function(req,res){
-let a  = req.body;
-
-})
-
-app.post("/",function(req,res){
-res.json({
-    message : "Hi"
-})
-})
-
-app.listen(3000,function(){
-    console.log("Running");
-});
+app.listen(3000);
